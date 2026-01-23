@@ -25,9 +25,9 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <a href="#home" className="flex items-center">
+          <a href="#home" className="flex items-center transition-transform duration-200 hover:scale-105">
             <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center shadow-lg">
+              <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center shadow-lg transition-shadow duration-200 hover:shadow-xl">
                 <span className="text-white font-bold text-lg">FS</span>
               </div>
               <div className="flex flex-col">
@@ -43,7 +43,7 @@ const Navbar = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-gray-700 hover:text-blue-600 text-sm font-medium transition-colors duration-200 flex items-center"
+                className="text-gray-700 hover:text-blue-600 text-sm font-medium transition-all duration-200 flex items-center hover:scale-105"
               >
                 {link.name}
                 {(link.name === 'Services' || link.name === 'Resources') && (
@@ -92,7 +92,7 @@ const Navbar = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className="block py-3 text-gray-700 hover:text-blue-600 font-medium transition-colors"
+                className="block py-3 text-gray-700 hover:text-blue-600 font-medium transition-all duration-200 hover:translate-x-2"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {link.name}

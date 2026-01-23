@@ -30,7 +30,7 @@ const Stats = () => {
           </p>
           <a
             href="#contact"
-            className="inline-flex items-center bg-white text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-all duration-300 shadow-lg"
+            className="inline-flex items-center bg-white text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-all duration-300 shadow-lg hover:scale-105 hover:shadow-xl hover:-translate-y-1"
           >
             Work with me
             <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -44,7 +44,7 @@ const Stats = () => {
           {stats.map((stat, index) => (
             <div
               key={index}
-              className="text-center border-l border-white/20 pl-8 first:border-l-0 first:pl-0"
+              className="text-center border-l border-white/20 pl-8 first:border-l-0 first:pl-0 transition-transform duration-300 hover:scale-110 hover:-translate-y-2"
             >
               <div className="text-5xl lg:text-6xl font-bold text-white mb-4">
                 {stat.number}

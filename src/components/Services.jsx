@@ -66,7 +66,7 @@ const Services = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-lg transition-all duration-300 group"
+              className="bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-lg transition-all duration-300 group hover:scale-105 hover:-translate-y-2"
             >
               {/* Icon/Visual */}
               {service.icon}
@@ -88,7 +88,7 @@ const Services = () => {
         <div className="text-center mt-12 lg:hidden">
           <a 
             href="#contact" 
-            className="border border-gray-300 text-gray-700 px-6 py-3 rounded-lg hover:border-blue-600 hover:text-blue-600 transition-all duration-300"
+            className="border border-gray-300 text-gray-700 px-6 py-3 rounded-lg hover:border-blue-600 hover:text-blue-600 transition-all duration-300 hover:scale-105 hover:shadow-md hover:scale-105 hover:shadow-md"
           >
             View all services
           </a>

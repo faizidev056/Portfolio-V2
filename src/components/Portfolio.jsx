@@ -46,7 +46,7 @@ const Portfolio = () => {
           <div className="hidden lg:flex items-center space-x-4">
             <a 
               href="#testimonials" 
-              className="border border-gray-300 text-gray-700 px-6 py-3 rounded-lg hover:border-blue-600 hover:text-blue-600 transition-all duration-300"
+              className="border border-gray-300 text-gray-700 px-6 py-3 rounded-lg hover:border-blue-600 hover:text-blue-600 transition-all duration-300 hover:scale-105 hover:shadow-md"
             >
               All case studies
             </a>
@@ -68,8 +68,8 @@ const Portfolio = () => {
         {/* Projects Grid */}
         <div className="grid lg:grid-cols-2 gap-8 mb-20">
           {projects.map((project, index) => (
-            <div key={index} className="group cursor-pointer">
-              <div className="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300">
+            <div key={index} className="group cursor-pointer transition-transform duration-300 hover:scale-105 hover:-translate-y-2">
+              <div className="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300">"
                 <div className="aspect-video bg-gray-100 relative overflow-hidden">
                   <img 
                     src={project.image} 

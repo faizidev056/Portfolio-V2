@@ -121,7 +121,7 @@ const About = () => {
             {/* Highlights Grid */}
             <div className="grid grid-cols-2 gap-4 mb-10">
               {highlights.map((item, index) => (
-                <div key={index} className="bg-gray-50 rounded-2xl p-5 hover:bg-indigo-50 transition-colors group">
+                <div key={index} className="bg-gray-50 rounded-2xl p-5 hover:bg-indigo-50 transition-all duration-300 group hover:scale-105 hover:-translate-y-2 hover:shadow-lg">"
                   <div className="flex items-center space-x-3 mb-2">
                     <div className="text-indigo-600 group-hover:scale-110 transition-transform">
                       {item.icon}

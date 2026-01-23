@@ -24,7 +24,7 @@ const Hero = () => {
 
             <a
               href="#contact"
-              className="inline-flex items-center bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl"
+              className="inline-flex items-center bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 hover:-translate-y-1"
             >
               Let's talk
               <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -34,8 +34,8 @@ const Hero = () => {
           </div>
 
           {/* Right Content - Webinar Card */}
-          <div className="relative">
-            <div className="bg-blue-800 rounded-2xl p-8 border border-blue-600">
+          <div className="relative transition-transform duration-300 hover:scale-105">
+            <div className="bg-blue-800 rounded-2xl p-8 border border-blue-600 transition-shadow duration-300 hover:shadow-2xl">
               <div className="flex items-start justify-between mb-6">
                 <div className="flex items-center space-x-3">
                   <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center">
