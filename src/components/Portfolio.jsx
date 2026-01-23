@@ -1,0 +1,142 @@
+const Portfolio = () => {
+  const projects = [
+    {
+      title: 'Streamlined ABB\'s operations with Flutter and Firebase integration',
+      company: 'ABB',
+      logo: 'ABB',
+      category: 'Machinery Manufacturing',
+      service: 'Flutter Implementation',
+      description: 'Built a comprehensive Flutter application with Firebase backend integration.',
+      image: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=600&h=400&fit=crop',
+    },
+    {
+      title: '23% increase in sales team productivity with a customized mobile system',
+      company: 'Knowles',
+      logo: 'knowles',
+      category: 'Manufacturing',
+      service: 'Mobile Development',
+      description: 'Developed a custom mobile solution that improved team efficiency.',
+      image: 'https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&h=400&fit=crop',
+    },
+  ]
+
+  const testimonials = [
+    {
+      quote: "tkxel shared our vision right from the get go, and helped us achieve the unthinkable. Their team was highly professional.",
+      author: "Pam Chitwood",
+      role: "Product Manager, ABB",
+      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=60&h=60&fit=crop&crop=face",
+    },
+    {
+      quote: "tkxel shared our vision right from the get go, and helped us achieve the unthinkable. Their team was highly professional.",
+      author: "Nick Drogo", 
+      role: "Global Director IT, Knowles",
+      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=60&h=60&fit=crop&crop=face",
+    },
+  ]
+
+  return (
+    <section id="portfolio" className="py-20 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Section Header */}
+        <div className="flex justify-between items-center mb-16">
+          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">
+            Featured success stories.
+          </h2>
+          <div className="hidden lg:flex items-center space-x-4">
+            <a 
+              href="#testimonials" 
+              className="border border-gray-300 text-gray-700 px-6 py-3 rounded-lg hover:border-blue-600 hover:text-blue-600 transition-all duration-300"
+            >
+              All case studies
+            </a>
+            <div className="flex space-x-2">
+              <button className="w-10 h-10 border border-gray-300 rounded-lg flex items-center justify-center hover:border-blue-600 hover:text-blue-600 transition-all">
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                </svg>
+              </button>
+              <button className="w-10 h-10 border border-gray-300 rounded-lg flex items-center justify-center hover:border-blue-600 hover:text-blue-600 transition-all">
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        {/* Projects Grid */}
+        <div className="grid lg:grid-cols-2 gap-8 mb-20">
+          {projects.map((project, index) => (
+            <div key={index} className="group cursor-pointer">
+              <div className="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300">
+                <div className="aspect-video bg-gray-100 relative overflow-hidden">
+                  <img 
+                    src={project.image} 
+                    alt={project.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute top-4 right-4 bg-white rounded-lg px-3 py-1">
+                    <span className="text-sm font-semibold text-gray-700">View case study</span>
+                  </div>
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
+                    {project.title}
+                  </h3>
+                  <div className="flex items-center space-x-3 mb-3">
+                    <span className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">
+                      {project.category}
+                    </span>
+                    <span className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm">
+                      {project.service}
+                    </span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <div className="bg-gray-100 rounded-lg px-4 py-2">
+                      <span className="font-bold text-gray-900">{project.company}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Testimonials */}
+        <div className="grid lg:grid-cols-2 gap-8">
+          {testimonials.map((testimonial, index) => (
+            <div key={index} className="bg-gray-50 rounded-xl p-8">
+              <div className="flex items-center space-x-4 mb-6">
+                <img 
+                  src={testimonial.image} 
+                  alt={testimonial.author}
+                  className="w-16 h-16 rounded-full object-cover"
+                />
+                <div>
+                  <h4 className="font-bold text-gray-900">{testimonial.author}</h4>
+                  <p className="text-gray-600 text-sm">{testimonial.role}</p>
+                </div>
+              </div>
+              <blockquote className="text-gray-700 italic leading-relaxed">
+                "{testimonial.quote}"
+              </blockquote>
+            </div>
+          ))}
+        </div>
+
+        {/* Mobile View All Button */}
+        <div className="text-center mt-12 lg:hidden">
+          <a 
+            href="#testimonials" 
+            className="border border-gray-300 text-gray-700 px-6 py-3 rounded-lg hover:border-blue-600 hover:text-blue-600 transition-all duration-300"
+          >
+            All case studies
+          </a>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+export default Portfolio
