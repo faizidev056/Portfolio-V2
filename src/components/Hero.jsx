@@ -12,14 +12,11 @@ const Hero = () => {
           {/* Left Content */}
           <div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-8">
-              Senior FlutterFlow & Full-Stack Developer
-              <span className="block">Architecting High-Performance</span>
-              <span className="block text-white/90">Mobile & Web Ecosystems</span>
+              Full Stack App Developer using Flutter & Flutterflow
             </h1>
 
             <p className="text-xl text-white/80 mb-10 max-w-lg leading-relaxed">
-              With over 5 years of experience, I bridge the gap between low-code speed (**FlutterFlow**) and custom-coded power (**Node.js/Flutter**).
-              I've deployed 10+ production-ready apps, leveraging expertise in **Flutter (Dart)**, **Node.js**, **Express.js**, and **Prisma** to build complex, scalable solutions that drive real business impact.
+              With over 5 years of experience, I specialize in bridging low-code platforms like FlutterFlow with custom development using Node.js and Flutter. I have successfully deployed 10+ production-ready applications, utilizing advanced skills in Flutter (Dart), Node.js, Express.js, and Prisma to create scalable, high-performance solutions that deliver measurable business value.
             </p>
 
             <a
