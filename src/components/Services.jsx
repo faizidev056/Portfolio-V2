@@ -70,16 +70,10 @@ const Services = () => {
     <section id="services" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="flex justify-between items-center mb-16">
+        <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">
             Our services
           </h2>
-          <a
-            href="#contact"
-            className="hidden lg:block border border-gray-300 text-gray-700 px-6 py-3 rounded-lg hover:border-blue-600 hover:text-blue-600 transition-all duration-300"
-          >
-            View all services
-          </a>
         </div>
 
         {/* Services Grid */}
@@ -105,15 +99,6 @@ const Services = () => {
           ))}
         </div>
 
-        {/* Mobile View All Button */}
-        <div className="text-center mt-12 lg:hidden">
-          <a
-            href="#contact"
-            className="border border-gray-300 text-gray-700 px-6 py-3 rounded-lg hover:border-blue-600 hover:text-blue-600 transition-all duration-300 hover:scale-105 hover:shadow-md hover:scale-105 hover:shadow-md"
-          >
-            View all services
-          </a>
-        </div>
       </div>
     </section>
   )
