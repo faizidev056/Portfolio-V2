@@ -36,3 +36,18 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #2563eb;
 }
+
+/* Hide scrollbar for horizontal scroll */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Smooth scroll behavior */
+.overflow-x-auto {
+  scroll-behavior: smooth;
+}
