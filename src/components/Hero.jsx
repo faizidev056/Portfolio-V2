@@ -1,4 +1,23 @@
+import { useState, useEffect } from 'react'
+
 const Hero = () => {
+  const [typedText, setTypedText] = useState('')
+  const fullText = 'Full Stack App Developer using Flutter & Flutterflow'
+  
+  useEffect(() => {
+    let currentIndex = 0
+    const typingInterval = setInterval(() => {
+      if (currentIndex <= fullText.length) {
+        setTypedText(fullText.slice(0, currentIndex))
+        currentIndex++
+      } else {
+        clearInterval(typingInterval)
+      }
+    }, 80) // 80ms delay between characters for realistic typing
+
+    return () => clearInterval(typingInterval)
+  }, [])
+
   return (
     <section id="home" className="relative pt-16 pb-20 overflow-hidden bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800">
       {/* Background Effects */}
@@ -11,8 +30,9 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left Content */}
           <div>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-8">
-              Full Stack App Developer using Flutter & Flutterflow
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-8 min-h-[180px] sm:min-h-[200px] lg:min-h-[240px]">
+              {typedText}
+              <span className="animate-pulse">|</span>
             </h1>
 
             <p className="text-xl text-white/80 mb-10 max-w-lg leading-relaxed">
