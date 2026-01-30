@@ -1,7 +1,7 @@
-import { useState, useEffect } from 'react'
+import { useEffect, useState } from 'react'
 
 const Navbar = () => {
-  const [isScrolled, setIsScrolled] = useState(false)
+  const [setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   useEffect(() => {
@@ -10,7 +10,7 @@ const Navbar = () => {
     }
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+  },)
 
   const navLinks = [
     { name: 'Services', href: '#services' },
@@ -32,7 +32,7 @@ const Navbar = () => {
               </div>
               <div className="flex flex-col">
                 <span className="text-xl font-bold text-gray-900">Faizan Saeed</span>
-                <span className="text-xs text-gray-500 -mt-1">Flutter Developer</span>
+                <span className="text-xs text-gray-500 -mt-1">Full Stack App Developer</span>
               </div>
             </div>
           </a>
