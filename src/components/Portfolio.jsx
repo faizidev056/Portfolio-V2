@@ -1,22 +1,49 @@
 const Portfolio = () => {
   const projects = [
     {
-      title: 'Streamlined ABB\'s operations with Flutter and Firebase integration',
-      company: 'ABB',
-      logo: 'ABB',
-      category: 'Machinery Manufacturing',
-      service: 'Flutter Implementation',
-      description: 'Built a comprehensive Flutter application with Firebase backend integration.',
-      image: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=600&h=400&fit=crop',
+      title: 'FetchFive: Real-Time Multiplayer Gaming Platform',
+      company: 'FetchFive',
+      logo: 'FetchFive',
+      category: 'Gaming',
+      service: 'Full-Stack Development',
+      description: 'Engineered a high-performance real-time multiplayer game leveraging **WebSockets** for instant communication and **REST APIs** for seamless data synchronization. Overcame latency challenges to ensure smooth gameplay across devices.',
+      image: 'https://images.unsplash.com/photo-1556438064-2d7646166914?w=600&h=400&fit=crop',
     },
     {
-      title: '23% increase in sales team productivity with a customized mobile system',
-      company: 'Knowles',
-      logo: 'knowles',
-      category: 'Manufacturing',
-      service: 'Mobile Development',
-      description: 'Developed a custom mobile solution that improved team efficiency.',
-      image: 'https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&h=400&fit=crop',
+      title: 'Ultimate Poker Host: Tournament Management System',
+      company: 'Ultimate Poker Host',
+      logo: 'UPH',
+      category: 'Entertainment',
+      service: 'Mobile & Backend Integration',
+      description: 'Developed a comprehensive tournament platform featuring real-time chat, deep linking for user acquisition, and **RevenueCat** for subscription management. Architected scalable backend to handle concurrent tournaments.',
+      image: 'https://images.unsplash.com/photo-1606167668584-87a0a5d10fd5?w=600&h=400&fit=crop',
+    },
+    {
+      title: 'Yearly: Automated Birthday Reminder & Gift Platform',
+      company: 'Yearly',
+      logo: 'Yearly',
+      category: 'Lifestyle',
+      service: 'Cross-Platform App Development',
+      description: 'Built an intelligent contact-fetching app with automated notifications and integrated gift-sending features. Implemented secure data handling and push notifications to enhance user engagement and retention.',
+      image: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=600&h=400&fit=crop',
+    },
+    {
+      title: 'BBFX: High-Security Currency Trading Platform',
+      company: 'BBFX',
+      logo: 'BBFX',
+      category: 'Finance',
+      service: 'Secure Mobile Trading App',
+      description: 'Created a robust currency trading app with real-time bidding and deal confirmation. Prioritized security with encrypted transactions and implemented real-time data feeds for accurate market information.',
+      image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&h=400&fit=crop',
+    },
+    {
+      title: 'SeaServe: Multi-App Yacht Management Ecosystem',
+      company: 'SeaServe',
+      logo: 'SeaServe',
+      category: 'Maritime',
+      service: 'Enterprise App Suite',
+      description: 'Architected a massive multi-app ecosystem for yacht management, featuring role-based UI and cross-app synchronization. Integrated complex workflows and ensured data consistency across multiple interconnected applications.',
+      image: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&h=400&fit=crop',
     },
   ]
 
@@ -29,7 +56,7 @@ const Portfolio = () => {
     },
     {
       quote: "tkxel shared our vision right from the get go, and helped us achieve the unthinkable. Their team was highly professional.",
-      author: "Nick Drogo", 
+      author: "Nick Drogo",
       role: "Global Director IT, Knowles",
       image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=60&h=60&fit=crop&crop=face",
     },
@@ -41,11 +68,11 @@ const Portfolio = () => {
         {/* Section Header */}
         <div className="flex justify-between items-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">
-            Featured success stories.
+            Key Projects: Technical Challenges Solved
           </h2>
           <div className="hidden lg:flex items-center space-x-4">
-            <a 
-              href="#testimonials" 
+            <a
+              href="#testimonials"
               className="border border-gray-300 text-gray-700 px-6 py-3 rounded-lg hover:border-blue-600 hover:text-blue-600 transition-all duration-300 hover:scale-105 hover:shadow-md"
             >
               All case studies
@@ -71,8 +98,8 @@ const Portfolio = () => {
             <div key={index} className="group cursor-pointer transition-transform duration-300 hover:scale-105 hover:-translate-y-2">
               <div className="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300">"
                 <div className="aspect-video bg-gray-100 relative overflow-hidden">
-                  <img 
-                    src={project.image} 
+                  <img
+                    src={project.image}
                     alt={project.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
@@ -108,8 +135,8 @@ const Portfolio = () => {
           {testimonials.map((testimonial, index) => (
             <div key={index} className="bg-gray-50 rounded-xl p-8">
               <div className="flex items-center space-x-4 mb-6">
-                <img 
-                  src={testimonial.image} 
+                <img
+                  src={testimonial.image}
                   alt={testimonial.author}
                   className="w-16 h-16 rounded-full object-cover"
                 />
@@ -127,8 +154,8 @@ const Portfolio = () => {
 
         {/* Mobile View All Button */}
         <div className="text-center mt-12 lg:hidden">
-          <a 
-            href="#testimonials" 
+          <a
+            href="#testimonials"
             className="border border-gray-300 text-gray-700 px-6 py-3 rounded-lg hover:border-blue-600 hover:text-blue-600 transition-all duration-300"
           >
             All case studies

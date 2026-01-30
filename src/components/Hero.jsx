@@ -12,14 +12,14 @@ const Hero = () => {
           {/* Left Content */}
           <div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-8">
-              Engineering
-              <span className="block">the future,</span>
-              <span className="block text-white/90">together.</span>
+              Senior FlutterFlow & Full-Stack Developer
+              <span className="block">Architecting High-Performance</span>
+              <span className="block text-white/90">Mobile & Web Ecosystems</span>
             </h1>
 
             <p className="text-xl text-white/80 mb-10 max-w-lg leading-relaxed">
-              I'm Faizan Saeed, your strategic Flutter development partner. I modernize mobile apps, 
-              integrate APIs, and build custom software that drives real business impact.
+              With over 5 years of experience, I bridge the gap between low-code speed (**FlutterFlow**) and custom-coded power (**Node.js/Flutter**).
+              I've deployed 10+ production-ready apps, leveraging expertise in **Flutter (Dart)**, **Node.js**, **Express.js**, and **Prisma** to build complex, scalable solutions that drive real business impact.
             </p>
 
             <a
@@ -48,26 +48,26 @@ const Hero = () => {
                   </span>
                 </div>
               </div>
-              
+
               <h3 className="text-2xl font-bold text-white mb-4 leading-tight">
                 How Faizan's Flutter Expertise Is Transforming Business Workflows
               </h3>
-              
+
               <div className="flex items-center space-x-4 mb-6">
-                <img 
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50&h=50&fit=crop&crop=face" 
-                  alt="Developer" 
+                <img
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50&h=50&fit=crop&crop=face"
+                  alt="Developer"
                   className="w-12 h-12 rounded-full"
                 />
-                <img 
-                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=50&h=50&fit=crop&crop=face" 
-                  alt="Developer" 
+                <img
+                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=50&h=50&fit=crop&crop=face"
+                  alt="Developer"
                   className="w-12 h-12 rounded-full"
                 />
               </div>
 
-              <a 
-                href="#contact" 
+              <a
+                href="#contact"
                 className="inline-flex items-center text-white hover:text-blue-200 font-semibold transition-colors"
               >
                 Schedule Demo

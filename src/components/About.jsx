@@ -1,11 +1,11 @@
 const About = () => {
   const skills = [
-    { name: 'Flutter', level: 95 },
-    { name: 'FlutterFlow', level: 90 },
-    { name: 'Firebase', level: 92 },
-    { name: 'REST APIs', level: 88 },
-    { name: 'GetX', level: 94 },
-    { name: 'UI/UX Design', level: 85 },
+    { name: 'FlutterFlow', level: 95 },
+    { name: 'Flutter (Dart)', level: 92 },
+    { name: 'Node.js', level: 90 },
+    { name: 'Express.js', level: 88 },
+    { name: 'Prisma', level: 85 },
+    { name: 'Firebase', level: 93 },
   ]
 
   const highlights = [
@@ -19,8 +19,8 @@ const About = () => {
       )
     },
     {
-      number: '4+',
-      label: 'Years in Flutter',
+      number: '10+',
+      label: 'Production Apps Deployed',
       icon: (
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -28,11 +28,12 @@ const About = () => {
       )
     },
     {
-      number: '50+',
-      label: 'Projects Completed',
+      number: 'BS',
+      label: 'Software Engineering',
       icon: (
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l9-5-9-5-9 5 9 5z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
         </svg>
       )
     },
@@ -60,12 +61,12 @@ const About = () => {
                   <div className="text-white mb-6">
                     <h3 className="text-2xl font-bold mb-2">Faizan Saeed</h3>
                     <p className="text-white/80 leading-relaxed">
-                      I'm a passionate Flutter developer specializing in cross-platform mobile development. 
-                      With 5+ years of overall experience and 4+ years focused on the Flutter ecosystem, 
-                      I've helped businesses across the globe turn their ideas into successful applications.
+                      I'm a Senior FlutterFlow & Full-Stack Developer with a BS in Software Engineering (2020–2024).
+                      With over 5 years of experience, I excel in building complex, high-performance mobile and web ecosystems,
+                      seamlessly integrating low-code solutions with custom backend architectures.
                     </p>
                   </div>
-                  
+
                   {/* Tech Icons */}
                   <div className="flex flex-wrap gap-4">
                     <div className="bg-white/20 rounded-xl p-3">
@@ -106,15 +107,15 @@ const About = () => {
             <div className="inline-flex items-center bg-indigo-100 rounded-full px-4 py-2 mb-4">
               <span className="text-indigo-700 text-sm font-semibold">About Me</span>
             </div>
-            
+
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
               Crafting Digital
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600"> Excellence</span>
             </h2>
 
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              I'm Faizan Saeed, a passionate Flutter developer who brings ideas to life through clean code and intuitive design. 
-              My focus is on creating applications that not only look great but perform exceptionally well, ensuring a seamless 
+              I'm Faizan Saeed, a passionate Flutter developer who brings ideas to life through clean code and intuitive design.
+              My focus is on creating applications that not only look great but perform exceptionally well, ensuring a seamless
               user experience that drives engagement and business growth.
             </p>
 
@@ -150,6 +151,71 @@ const About = () => {
                   </div>
                 </div>
               ))}
+            </div>
+
+            {/* Tech Stack Table */}
+            <div className="mt-10">
+              <h3 className="text-lg font-semibold text-gray-900 mb-6">Comprehensive Tech Stack</h3>
+              <div className="space-y-6">
+                <div>
+                  <h4 className="text-md font-semibold text-indigo-600 mb-3">Frontend</h4>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">**FlutterFlow**</span>
+                    <span className="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">**Flutter**</span>
+                    <span className="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Responsive UI/UX</span>
+                    <span className="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Animations</span>
+                  </div>
+                </div>
+                <div>
+                  <h4 className="text-md font-semibold text-indigo-600 mb-3">Backend & API</h4>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">**Node.js**</span>
+                    <span className="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">**Express.js**</span>
+                    <span className="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">RESTful APIs</span>
+                    <span className="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">WebSockets</span>
+                  </div>
+                </div>
+                <div>
+                  <h4 className="text-md font-semibold text-indigo-600 mb-3">DevOps & Tools</h4>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">**Docker**</span>
+                    <span className="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">**GitHub**</span>
+                    <span className="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">**Postman**</span>
+                    <span className="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">App Store/Play Store Deployment</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Experience Timeline */}
+            <div className="mt-10">
+              <h3 className="text-lg font-semibold text-gray-900 mb-6">Experience Timeline</h3>
+              <div className="space-y-6">
+                <div className="flex items-start space-x-4">
+                  <div className="w-12 h-12 bg-indigo-600 rounded-full flex items-center justify-center flex-shrink-0">
+                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m8 0V8a2 2 0 01-2 2H8a2 2 0 01-2-2V6m8 0H8" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 className="text-md font-semibold text-gray-900">Flutter Developer at Fortex Solutions</h4>
+                    <p className="text-gray-600 text-sm mb-2">Current Position</p>
+                    <p className="text-gray-700">Leading mobile app development initiatives, architecting end-to-end product deliveries for enterprise clients using **Flutter** and **FlutterFlow**.</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-4">
+                  <div className="w-12 h-12 bg-indigo-600 rounded-full flex items-center justify-center flex-shrink-0">
+                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 className="text-md font-semibold text-gray-900">Lead Freelance Developer</h4>
+                    <p className="text-gray-600 text-sm mb-2">5+ Years</p>
+                    <p className="text-gray-700">Transitioned from building individual apps to orchestrating complex ecosystems, delivering scalable solutions for startups and enterprises worldwide.</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
