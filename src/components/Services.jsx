@@ -1,98 +1,106 @@
 const Services = () => {
   const services = [
     {
-      title: 'Mobile App Development',
-      description: 'Native iOS and Android apps built with Flutter for optimal performance and user experience.',
-      icon: (
-        <div className="w-full h-48 bg-gradient-to-br from-blue-400 via-blue-500 to-blue-600 rounded-t-xl flex items-center justify-center">
-          <div className="w-24 h-24 bg-white/20 rounded-full blur-xl"></div>
-        </div>
-      ),
+      title: 'Full Stack App Development',
+      description: 'Building cross-platform applications with Flutter, FlutterFlow, and React. Expert in state management using Bloc, Riverpod, Provider, and GetX.',
+      image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=600&fit=crop',
     },
     {
-      title: 'API Integration',
-      description: 'Seamless integration with REST APIs, Firebase, and third-party services for complete functionality.',
-      icon: (
-        <div className="w-full h-48 bg-gradient-to-br from-cyan-400 via-blue-500 to-indigo-600 rounded-t-xl flex items-center justify-center relative overflow-hidden">
-          <div className="w-32 h-32 bg-white/10 rounded-full"></div>
-          <div className="absolute inset-0 bg-gradient-to-t from-transparent via-white/5 to-transparent"></div>
-        </div>
-      ),
+      title: 'Web Development',
+      description: 'Modern web applications using React, Vue, Svelte, Next.js, and Tailwind CSS for responsive, high-performance user experiences.',
+      image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=600&fit=crop',
     },
     {
-      title: 'State Management',
-      description: 'Expert implementation of GetX and other state management solutions for scalable architecture.',
-      icon: (
-        <div className="w-full h-48 bg-gradient-to-br from-blue-500 via-indigo-500 to-purple-600 rounded-t-xl flex items-center justify-center relative">
-          <div className="flex space-x-2">
-            <div className="w-8 h-8 bg-white/20 rounded-full"></div>
-            <div className="w-8 h-8 bg-white/20 rounded-full"></div>
-            <div className="w-8 h-8 bg-white/20 rounded-full"></div>
-            <div className="w-8 h-8 bg-white/20 rounded-full"></div>
-          </div>
-        </div>
-      ),
+      title: 'Backend Development',
+      description: 'Scalable server-side solutions with Node.js, Express.js, and Nest.js. RESTful APIs and microservices architecture implementation.',
+      image: 'https://images.unsplash.com/photo-1627398242454-45a1465c2479?w=800&h=600&fit=crop',
     },
     {
-      title: 'Digital Strategy Consulting',
-      description: 'Strategic guidance on mobile app architecture, technology choices, and development roadmaps.',
-      icon: (
-        <div className="w-full h-48 bg-gradient-to-br from-indigo-500 via-blue-600 to-purple-700 rounded-t-xl flex items-center justify-center relative">
-          <div className="w-24 h-24 bg-white/10 rounded-full"></div>
-          <div className="absolute top-4 right-4 w-16 h-16 bg-white/5 rounded-full"></div>
-        </div>
-      ),
+      title: 'Database Management',
+      description: 'Expert database design and optimization using MongoDB, PostgreSQL, SQLite, Hive, Get_storage, and SharedPreferences.',
+      image: 'https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=800&h=600&fit=crop',
+    },
+    {
+      title: 'UI/UX Design',
+      description: 'Creating intuitive and visually appealing user interfaces with focus on user experience, accessibility, and modern design principles.',
+      image: 'https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=800&h=600&fit=crop',
+    },
+    {
+      title: 'WordPress Development',
+      description: 'Custom WordPress themes, plugins, and e-commerce solutions. Performance optimization and security implementation.',
+      image: 'https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=800&h=600&fit=crop',
     },
   ]
 
   return (
-    <section id="services" className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="services" className="py-16 sm:py-20 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
+      {/* Background Decorative Elements */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-20 right-10 w-72 h-72 bg-blue-100 rounded-full opacity-30 blur-3xl"></div>
+        <div className="absolute bottom-20 left-10 w-72 h-72 bg-cyan-100 rounded-full opacity-30 blur-3xl"></div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
-        <div className="flex justify-between items-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">
-            Our services
+        <div className="text-center mb-12 sm:mb-16">
+          <div className="inline-flex items-center bg-blue-100 rounded-full px-4 py-2 mb-4">
+            <span className="text-blue-700 text-sm font-semibold">What We Offer</span>
+          </div>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+            Our
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-600"> Services</span>
           </h2>
-          <a 
-            href="#contact" 
-            className="hidden lg:block border border-gray-300 text-gray-700 px-6 py-3 rounded-lg hover:border-blue-600 hover:text-blue-600 transition-all duration-300"
-          >
-            View all services
-          </a>
+          <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
+            Comprehensive solutions to transform your ideas into powerful digital experiences
+          </p>
         </div>
 
         {/* Services Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-lg transition-all duration-300 group hover:scale-105 hover:-translate-y-2"
+              className="bg-white rounded-2xl overflow-hidden border border-gray-200 hover:border-blue-300 hover:shadow-2xl transition-all duration-500 group relative"
             >
-              {/* Icon/Visual */}
-              {service.icon}
-              
+              {/* Image */}
+              <div className="relative h-48 sm:h-56 overflow-hidden">
+                <img 
+                  src={service.image} 
+                  alt={service.title}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-all duration-700"
+                />
+                {/* Subtle Gradient Overlay for text readability */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                
+                {/* Title with Arrow */}
+                <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-4">
+                  <h3 className="text-sm sm:text-xl font-bold text-white drop-shadow-lg">
+                    {service.title}
+                  </h3>
+                </div>
+              </div>
+
               {/* Content */}
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
-                  {service.title}
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
+              <div className="p-3 sm:p-6 bg-gradient-to-b from-white to-gray-50/50 group-hover:bg-white transition-colors duration-300">
+                <p className="text-xs sm:text-sm text-gray-600 leading-relaxed line-clamp-3 group-hover:text-gray-800 transition-colors">
                   {service.description}
                 </p>
+                
+                {/* Learn More Link - appears on hover */}
+                <div className="mt-3 sm:mt-4 flex items-center text-blue-600 font-semibold text-xs sm:text-sm opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300">
+                  <span>Explore service</span>
+                  <svg className="w-3 h-3 sm:w-4 sm:h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </div>
               </div>
+
+              {/* Animated Bottom Bar */}
+              <div className="h-1 bg-gradient-to-r from-blue-600 to-cyan-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-700 origin-left"></div>
             </div>
           ))}
         </div>
 
-        {/* Mobile View All Button */}
-        <div className="text-center mt-12 lg:hidden">
-          <a 
-            href="#contact" 
-            className="border border-gray-300 text-gray-700 px-6 py-3 rounded-lg hover:border-blue-600 hover:text-blue-600 transition-all duration-300 hover:scale-105 hover:shadow-md hover:scale-105 hover:shadow-md"
-          >
-            View all services
-          </a>
-        </div>
       </div>
     </section>
   )

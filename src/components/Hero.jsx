@@ -1,6 +1,25 @@
+import { useState, useEffect } from 'react'
+
 const Hero = () => {
+  const [typedText, setTypedText] = useState('')
+  const fullText = 'Full Stack App Developer using Flutter & Flutterflow'
+  
+  useEffect(() => {
+    let currentIndex = 0
+    const typingInterval = setInterval(() => {
+      if (currentIndex <= fullText.length) {
+        setTypedText(fullText.slice(0, currentIndex))
+        currentIndex++
+      } else {
+        clearInterval(typingInterval)
+      }
+    }, 80) // 80ms delay between characters for realistic typing
+
+    return () => clearInterval(typingInterval)
+  }, [])
+
   return (
-    <section id="home" className="relative pt-16 pb-20 overflow-hidden bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800">
+    <section id="home" className="relative pt-16 pb-20 overflow-hidden bg-gradient-to-br from-blue-600 via-blue-700 to-cyan-600">
       {/* Background Effects */}
       <div className="absolute inset-0">
         <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
@@ -11,20 +30,18 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left Content */}
           <div>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-8">
-              Engineering
-              <span className="block">the future,</span>
-              <span className="block text-white/90">together.</span>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-8 min-h-[180px] sm:min-h-[200px] lg:min-h-[240px]">
+              {typedText}
+              <span className="animate-pulse">|</span>
             </h1>
 
             <p className="text-xl text-white/80 mb-10 max-w-lg leading-relaxed">
-              I'm Faizan Saeed, your strategic Flutter development partner. I modernize mobile apps, 
-              integrate APIs, and build custom software that drives real business impact.
+              With over 5 years of experience, I specialize in bridging low-code platforms like FlutterFlow with custom development using Node.js and Flutter. I have successfully deployed 10+ production-ready applications, utilizing advanced skills in Flutter (Dart), Node.js, Express.js, and Prisma to create scalable, high-performance solutions that deliver measurable business value.
             </p>
 
             <a
               href="#contact"
-              className="inline-flex items-center bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 hover:-translate-y-1"
+              className="inline-flex items-center bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 hover:-translate-y-1"
             >
               Let's talk
               <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -48,26 +65,26 @@ const Hero = () => {
                   </span>
                 </div>
               </div>
-              
+
               <h3 className="text-2xl font-bold text-white mb-4 leading-tight">
                 How Faizan's Flutter Expertise Is Transforming Business Workflows
               </h3>
-              
+
               <div className="flex items-center space-x-4 mb-6">
-                <img 
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50&h=50&fit=crop&crop=face" 
-                  alt="Developer" 
+                <img
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50&h=50&fit=crop&crop=face"
+                  alt="Developer"
                   className="w-12 h-12 rounded-full"
                 />
-                <img 
-                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=50&h=50&fit=crop&crop=face" 
-                  alt="Developer" 
+                <img
+                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=50&h=50&fit=crop&crop=face"
+                  alt="Developer"
                   className="w-12 h-12 rounded-full"
                 />
               </div>
 
-              <a 
-                href="#contact" 
+              <a
+                href="#contact"
                 className="inline-flex items-center text-white hover:text-blue-200 font-semibold transition-colors"
               >
                 Schedule Demo

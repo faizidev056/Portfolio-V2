@@ -1,7 +1,7 @@
-import { useState, useEffect } from 'react'
+import { useEffect, useState } from 'react'
 
 const Navbar = () => {
-  const [isScrolled, setIsScrolled] = useState(false)
+  const [setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   useEffect(() => {
@@ -10,7 +10,7 @@ const Navbar = () => {
     }
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+  },)
 
   const navLinks = [
     { name: 'Services', href: '#services' },
@@ -27,12 +27,12 @@ const Navbar = () => {
           {/* Logo */}
           <a href="#home" className="flex items-center transition-transform duration-200 hover:scale-105">
             <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center shadow-lg transition-shadow duration-200 hover:shadow-xl">
+              <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-cyan-600 rounded-lg flex items-center justify-center shadow-lg transition-shadow duration-200 hover:shadow-xl">
                 <span className="text-white font-bold text-lg">FS</span>
               </div>
               <div className="flex flex-col">
                 <span className="text-xl font-bold text-gray-900">Faizan Saeed</span>
-                <span className="text-xs text-gray-500 -mt-1">Flutter Developer</span>
+                <span className="text-xs text-gray-500 -mt-1">Full Stack App Developer</span>
               </div>
             </div>
           </a>

@@ -5,7 +5,7 @@ const Stats = () => {
       label: 'YEARS ON\nMARKET',
     },
     {
-      number: '50+',
+      number: '15+',
       label: 'PROFESSIONALS\nON BOARD',
     },
     {
@@ -13,8 +13,8 @@ const Stats = () => {
       label: 'OF CLIENTS RETURN FOR\nLONG-TERM PARTNERSHIPS',
     },
     {
-      number: '4',
-      label: 'GLOBAL\nOFFICES',
+      number: '10+',
+      label: 'Industry Level\nPROJECTS DELIVERED',
     },
   ]
 
