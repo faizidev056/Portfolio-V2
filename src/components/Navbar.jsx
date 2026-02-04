@@ -13,10 +13,11 @@ const Navbar = () => {
   },)
 
   const navLinks = [
+    { name: 'Home', href: '#home' },
     { name: 'Services', href: '#services' },
-    { name: 'Customers', href: '#portfolio' },
-    { name: 'Company', href: '#about' },
-    { name: 'Resources', href: '#testimonials' },
+    { name: 'Team', href: '#team' },
+    { name: 'Projects', href: '#portfolio' },
+    { name: 'Reviews', href: '#reviews' },
     { name: 'Contact', href: '#contact' },
   ]
 
@@ -46,11 +47,6 @@ const Navbar = () => {
                 className="text-gray-700 hover:text-blue-600 text-sm font-medium transition-all duration-200 flex items-center hover:scale-105"
               >
                 {link.name}
-                {(link.name === 'Services' || link.name === 'Resources') && (
-                  <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                  </svg>
-                )}
               </a>
             ))}
           </div>

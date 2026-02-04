@@ -185,7 +185,7 @@ const Portfolio = () => {
         </div>
 
         {/* What Clients Say Carousel */}
-        <div className="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-12 xl:p-16 shadow-xl border border-gray-100 mb-12 sm:mb-16">
+        <div id="reviews" className="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-12 xl:p-16 shadow-xl border border-gray-100 mb-12 sm:mb-16">
           <div className="text-center mb-8 sm:mb-12">
             <h3 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
               What Clients
@@ -269,8 +269,8 @@ const Portfolio = () => {
                     key={index}
                     onClick={() => setCurrentTestimonial(index)}
                     className={`relative transition-all duration-300 ${index === currentTestimonial
-                        ? 'w-3 h-3 sm:w-4 sm:h-4'
-                        : 'w-2.5 h-2.5 sm:w-3 sm:h-3 hover:scale-125'
+                      ? 'w-3 h-3 sm:w-4 sm:h-4'
+                      : 'w-2.5 h-2.5 sm:w-3 sm:h-3 hover:scale-125'
                       }`}
                   >
                     {/* Outer ring for active state */}
@@ -280,8 +280,8 @@ const Portfolio = () => {
 
                     {/* Main dot */}
                     <div className={`w-full h-full rounded-full transition-all duration-300 ${index === currentTestimonial
-                        ? 'bg-blue-600 shadow-lg shadow-blue-300'
-                        : 'bg-gray-300 hover:bg-blue-200'
+                      ? 'bg-blue-600 shadow-lg shadow-blue-300'
+                      : 'bg-gray-300 hover:bg-blue-200'
                       }`}>
                       {/* Inner highlight for active state */}
                       {index === currentTestimonial && (
