@@ -76,7 +76,7 @@ const OurTeam = () => {
     {
       name: 'Kabir Ahmad',
       role: 'Web Developer',
-      specialty: 'Modern Web Development & Cloud Deployment',
+      specialty: 'Web Development & Cloud Deployment',
       image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face',
       bio: 'Web Developer with 2+ years of experience building responsive, reliable web applications. Experienced in modern frontend and backend development with hands-on exposure to cloud deployment, CI/CD pipelines, and application performance optimization.',
       skills: [
