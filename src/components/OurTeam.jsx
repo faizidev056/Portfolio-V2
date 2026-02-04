@@ -1,5 +1,10 @@
 import { useEffect, useState } from 'react'
 
+// Import local images
+import ambreenImage from '../assets/ambreen.png'
+import faizanSaeedImage from '../assets/faizan_saeed.png'
+import talhaImage from '../assets/talha.png'
+
 const OurTeam = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isAutoPlaying, setIsAutoPlaying] = useState(true)
@@ -9,7 +14,7 @@ const OurTeam = () => {
       name: 'Faizan Saeed',
       role: 'Lead Flutter Developer',
       specialty: 'Flutter, FlutterFlow & Scalable Mobile Architecture',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face',
+      image: faizanSaeedImage,
       bio: 'Lead Flutter Developer with 5+ years of experience building high-performance mobile applications. Specialized in Flutter and FlutterFlow, clean architecture (MVVM), and backend integrations. Proven expertise in developing scalable, secure apps with real-time features and smooth user experiences.',
       skills: [
         'Flutter',
@@ -50,7 +55,7 @@ const OurTeam = () => {
       name: 'Ambreen Fatima',
       role: 'Web Developer | Backend Developer',
       specialty: 'MERN Stack',
-      image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=face',
+      image: ambreenImage,
       bio: 'Web and Backend Developer with 5+ years of industry experience building scalable, secure web applications. Specialized in the MERN stack with a strong focus on backend APIs, authentication, and maintainable system architecture.',
       skills: [
         'React.js',
@@ -69,16 +74,28 @@ const OurTeam = () => {
     {
       name: 'Kabir Ahmad',
       role: 'Web Developer',
-      specialty: 'Cloud Infrastructure & CI/CD',
+      specialty: 'Modern Web Development & Cloud Deployment',
       image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face',
-      bio: 'DevOps expert focused on automation, deployment pipelines, and cloud infrastructure.',
-      skills: ['AWS', 'Docker', 'Kubernetes', 'CI/CD']
-    },
+      bio: 'Web Developer with 2+ years of experience building responsive, reliable web applications. Experienced in modern frontend and backend development with hands-on exposure to cloud deployment, CI/CD pipelines, and application performance optimization.',
+      skills: [
+        'HTML',
+        'CSS',
+        'JavaScript',
+        'React.js',
+        'Node.js',
+        'REST APIs',
+        'AWS',
+        'Docker',
+        'CI/CD',
+        'Git & GitHub'
+      ]
+    }
+    ,
     {
       name: 'Muhammad Talha',
       role: 'Software Engineer | Flutter Developer',
       specialty: 'Flutter Mobile App Development',
-      image: 'https://media.licdn.com/dms/image/v2/D4D03AQEOs2lvBS2eIg/profile-displayphoto-crop_800_800/B4DZrViMT4JcAI-/0/1764519103662?e=1772064000&v=beta&t=56LAmDVRlWgUqfQE58Ux4pcQxjFXLGCKRfTTZJr4cYQ',
+      image: talhaImage,
       bio: 'Passionate Flutter developer focused on building high-performance mobile applications with clean architecture, seamless API integrations, and polished user experiences. Strong ownership mindset with a track record of delivering end-to-end solutions that create real value.',
       skills: [
         'Flutter',
@@ -93,12 +110,22 @@ const OurTeam = () => {
     },
     {
       name: 'Muhammad Usman',
-      role: 'Flutter App Developer',
-      specialty: 'Agile & Client Relations',
+      role: 'Senior Flutter App Developer',
+      specialty: 'Flutter Architecture & Scalable Mobile Apps',
       image: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&h=400&fit=crop&crop=face',
-      bio: 'Experienced PM ensuring seamless project delivery and exceptional client communication.',
-      skills: ['Agile', 'Scrum', 'Jira', 'Stakeholder Management']
+      bio: 'Senior Flutter App Developer with 5+ years of experience building scalable, high-performance mobile applications. Expertise in Flutter architecture, state management, and API integration, with a strong focus on clean code, performance optimization, and collaborative development.',
+      skills: [
+        'Flutter',
+        'Dart',
+        'State Management',
+        'REST API Integration',
+        'Firebase',
+        'Clean Architecture',
+        'Performance Optimization',
+        'Git & Version Control'
+      ]
     }
+
   ]
 
   const itemsPerView = 3
