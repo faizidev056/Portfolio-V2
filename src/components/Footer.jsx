@@ -1,3 +1,5 @@
+import faizanSaeedImage from '../assets/faizan_saeed.png'
+
 const Footer = () => {
   const currentYear = new Date().getFullYear()
 
@@ -31,8 +33,8 @@ const Footer = () => {
           <div className="lg:col-span-1">
             <a href="#home" className="inline-block mb-6 transition-transform duration-200 hover:scale-105">
               <div className="flex items-center space-x-3">
-                <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center shadow-lg">
-                  <span className="text-white font-bold text-xl">FS</span>
+                <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center shadow-lg overflow-hidden">
+                  <img src={faizanSaeedImage} alt="FS" className="w-full h-full object-cover" />
                 </div>
                 <div className="flex flex-col">
                   <span className="text-2xl font-bold text-white">Faizan Saeed</span>

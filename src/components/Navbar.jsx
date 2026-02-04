@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import faizanSaeedImage from '../assets/faizan_saeed.png'
 
 const Navbar = () => {
   const [setIsScrolled] = useState(false)
@@ -26,18 +27,20 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <a href="#home" className="flex items-center transition-transform duration-200 hover:scale-105">
-            <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center shadow-lg transition-shadow duration-200 hover:shadow-xl">
-                <span className="text-white font-bold text-lg">FS</span>
-              </div>
-              <div className="flex flex-col">
-                <span className="text-xl font-bold text-gray-900">Faizan Saeed</span>
-                <span className="text-xs text-gray-500 -mt-1">Full Stack App Developer</span>
-              </div>
+          <a href="#home" className="flex items-center space-x-2 transition-transform duration-200 hover:scale-105">
+            <img
+              src={faizanSaeedImage}
+              alt="Faizan Saeed"
+              className="w-10 h-10 object-cover"
+            />
+
+            <div className="flex flex-col">
+              <span className="text-xl font-bold text-gray-900">Faizan Saeed</span>
+              <span className="text-xs text-gray-500 -mt-1">
+                Full Stack App Developer
+              </span>
             </div>
           </a>
-
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
             {navLinks.map((link) => (
