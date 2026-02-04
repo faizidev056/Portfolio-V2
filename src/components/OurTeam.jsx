@@ -31,6 +31,7 @@ const OurTeam = () => {
         'React.js',
         'Next.js',
         'TypeScript',
+        'WordPress',
         'JavaScript (ES6+)',
         'Node.js',
         'Express.js',
