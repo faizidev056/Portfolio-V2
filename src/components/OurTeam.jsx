@@ -23,11 +23,24 @@ const OurTeam = () => {
     },
     {
       name: 'Ambreen Fatima',
-      role: 'Full Stack Web Developer (MERN)',
-      specialty: 'API Development & Database Architecture',
+      role: 'Full Stack Web Developer',
+      specialty: 'MERN Stack',
       image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=face',
-      bio: 'Backend specialist with expertise in building scalable, secure server-side applications.',
-      skills: ['Node.js', 'Express.js', 'PostgreSQL', 'Docker', 'WordPress']
+      bio: 'Results-driven Full Stack Developer with 3+ years of experience building scalable web applications using React, Next.js, TypeScript, and the MERN stack. Skilled in secure backend API development, JWT authentication, and role-based access control with Prisma and NodeACL.',
+      skills: [
+        'React.js',
+        'Next.js',
+        'TypeScript',
+        'JavaScript (ES6+)',
+        'Node.js',
+        'Express.js',
+        'MongoDB',
+        'Prisma ORM',
+        'JWT Authentication',
+        'REST APIs',
+        'NodeACL',
+        'Git & GitHub'
+      ]
     },
     {
       name: 'Kabir Ahmad',
