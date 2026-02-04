@@ -8,41 +8,64 @@ const OurTeam = () => {
     {
       name: 'Faizan Saeed',
       role: 'Lead Flutter Developer',
-      specialty: 'FlutterFlow & Mobile Architecture',
+      specialty: 'Flutter, FlutterFlow & Scalable Mobile Architecture',
       image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face',
-      bio: 'Full-stack developer specializing in Flutter and backend integration with 5+ years of experience.',
-      skills: ['Flutter', 'FlutterFlow', 'Node.js', 'Firebase']
+      bio: 'Lead Flutter Developer with 5+ years of experience building high-performance mobile applications. Specialized in Flutter and FlutterFlow, clean architecture (MVVM), and backend integrations. Proven expertise in developing scalable, secure apps with real-time features and smooth user experiences.',
+      skills: [
+        'Flutter',
+        'FlutterFlow',
+        'Dart',
+        'Node.js',
+        'Express.js',
+        'Prisma ORM',
+        'MongoDB',
+        'GraphQL',
+        'PostGreSQL',
+        'Firebase',
+        'REST APIs',
+        'MVVM Architecture',
+        'State Management',
+        'Performance Optimization'
+      ]
     },
     {
       name: 'Faizan Sattar',
-      role: 'UI/UX Designer',
+      role: 'Product Designer',
       specialty: 'User Experience & Interface Design',
       image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop&crop=face',
-      bio: 'Creative designer focused on crafting beautiful, intuitive user experiences that drive engagement.',
-      skills: ['Figma', 'Prototyping', 'User Research', 'Design Systems']
+      bio: 'Product Designer with 3+ years of experience creating intuitive, user-centered digital products. Skilled in UX research, wireframing, and design systems, with a strong focus on delivering scalable and visually engaging experiences through close collaboration with cross-functional teams.'
+      , skills: [
+        'Figma',
+        'UI/UX Design',
+        'Wireframing',
+        'Prototyping',
+        'User Research',
+        'Design Systems',
+        'Usability Testing',
+        'Interaction Design',
+        'Responsive Design'
+      ]
     },
     {
       name: 'Ambreen Fatima',
-      role: 'Full Stack Web Developer',
+      role: 'Web Developer | Backend Developer',
       specialty: 'MERN Stack',
       image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=face',
-      bio: 'Results-driven Full Stack Developer with 3+ years of experience building scalable web applications using React, Next.js, TypeScript, and the MERN stack. Skilled in secure backend API development, JWT authentication, and role-based access control with Prisma and NodeACL.',
+      bio: 'Web and Backend Developer with 5+ years of industry experience building scalable, secure web applications. Specialized in the MERN stack with a strong focus on backend APIs, authentication, and maintainable system architecture.',
       skills: [
         'React.js',
         'Next.js',
-        'TypeScript',
-        'WordPress',
         'JavaScript (ES6+)',
         'Node.js',
         'Express.js',
         'MongoDB',
-        'Prisma ORM',
+        'REST API Development',
         'JWT Authentication',
-        'REST APIs',
-        'NodeACL',
         'Git & GitHub'
       ]
-    },
+    }
+
+    ,
     {
       name: 'Kabir Ahmad',
       role: 'Web Developer',
@@ -52,12 +75,21 @@ const OurTeam = () => {
       skills: ['AWS', 'Docker', 'Kubernetes', 'CI/CD']
     },
     {
-      name: 'Talha Ashraf',
-      role: 'Flutter and Flutterflow Devloper',
-      specialty: 'Quality Assurance & Testing',
-      image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop&crop=face',
-      bio: 'Meticulous QA engineer ensuring flawless user experiences through comprehensive testing.',
-      skills: ['Test Automation', 'Selenium', 'Jest', 'Quality Standards']
+      name: 'Muhammad Talha',
+      role: 'Software Engineer | Flutter Developer',
+      specialty: 'Flutter Mobile App Development',
+      image: 'https://media.licdn.com/dms/image/v2/D4D03AQEOs2lvBS2eIg/profile-displayphoto-crop_800_800/B4DZrViMT4JcAI-/0/1764519103662?e=1772064000&v=beta&t=56LAmDVRlWgUqfQE58Ux4pcQxjFXLGCKRfTTZJr4cYQ',
+      bio: 'Passionate Flutter developer focused on building high-performance mobile applications with clean architecture, seamless API integrations, and polished user experiences. Strong ownership mindset with a track record of delivering end-to-end solutions that create real value.',
+      skills: [
+        'Flutter',
+        'Dart',
+        'Clean Architecture',
+        'REST APIs',
+        'Firebase',
+        'State Management',
+        'Mobile App Optimization',
+        'End-to-End App Development'
+      ]
     },
     {
       name: 'Muhammad Usman',
