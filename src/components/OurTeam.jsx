@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useEffect, useState } from 'react'
 
 const OurTeam = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -84,7 +84,7 @@ const OurTeam = () => {
   }
 
   return (
-    <section id="team" className="py-16 bg-gradient-to-b from-white to-gray-50 overflow-hidden">
+    <section id="team" className="py-16 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-12">
@@ -93,7 +93,7 @@ const OurTeam = () => {
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
             Meet the
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-600"> Experts</span>
+            <span className="text-blue-600"> Experts</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Talented professionals dedicated to bringing your vision to life with expertise and passion
@@ -140,13 +140,13 @@ const OurTeam = () => {
                     <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-500 overflow-hidden h-full flex flex-col transform hover:-translate-y-2">
                       {/* Image Container with Gradient Overlay */}
                       <div className="relative h-56 sm:h-64 overflow-hidden">
-                        <div className="absolute inset-0 bg-gradient-to-t from-blue-900/70 via-blue-900/30 to-transparent z-10"></div>
+                        <div className="absolute inset-0 bg-blue-900/70 z-10"></div>
                         <img
                           src={member.image}
                           alt={member.name}
                           className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                         />
-                        
+
                         {/* Overlay Info */}
                         <div className="absolute bottom-0 left-0 right-0 z-20 p-4 sm:p-5 text-white">
                           <h3 className="text-xl sm:text-2xl font-bold mb-1">{member.name}</h3>
@@ -161,7 +161,7 @@ const OurTeam = () => {
                             {member.specialty}
                           </span>
                         </div>
-                        
+
                         <p className="text-gray-600 text-sm leading-relaxed mb-4 flex-grow">
                           {member.bio}
                         </p>
@@ -182,7 +182,7 @@ const OurTeam = () => {
                       </div>
 
                       {/* Bottom Accent */}
-                      <div className="h-1 bg-gradient-to-r from-blue-600 to-cyan-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
+                      <div className="h-1 bg-blue-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
                     </div>
                   </div>
                 </div>
@@ -196,11 +196,10 @@ const OurTeam = () => {
               <button
                 key={index}
                 onClick={() => goToSlide(index)}
-                className={`transition-all duration-300 rounded-full ${
-                  currentIndex === index
-                    ? 'w-8 h-3 bg-gradient-to-r from-blue-600 to-cyan-600'
+                className={`transition-all duration-300 rounded-full ${currentIndex === index
+                    ? 'w-8 h-3 bg-blue-600'
                     : 'w-3 h-3 bg-gray-300 hover:bg-gray-400'
-                }`}
+                  }`}
                 aria-label={`Go to slide ${index + 1}`}
               />
             ))}

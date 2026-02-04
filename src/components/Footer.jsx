@@ -23,7 +23,7 @@ const Footer = () => {
   }
 
   return (
-    <footer className="bg-gradient-to-br from-blue-900 via-blue-800 to-cyan-800 text-white">
+    <footer className="bg-blue-900 text-white">
       {/* Main Footer */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-16">
@@ -31,7 +31,7 @@ const Footer = () => {
           <div className="lg:col-span-1">
             <a href="#home" className="inline-block mb-6 transition-transform duration-200 hover:scale-105">
               <div className="flex items-center space-x-3">
-                <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-cyan-600 rounded-lg flex items-center justify-center shadow-lg">
+                <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center shadow-lg">
                   <span className="text-white font-bold text-xl">FS</span>
                 </div>
                 <div className="flex flex-col">
@@ -41,8 +41,8 @@ const Footer = () => {
               </div>
             </a>
             <p className="text-gray-400 mb-6 leading-relaxed">
-              Expert Flutter & FlutterFlow developer with 5+ years of experience 
-              building high-quality mobile applications. Specializing in cross-platform 
+              Expert Flutter & FlutterFlow developer with 5+ years of experience
+              building high-quality mobile applications. Specializing in cross-platform
               development that drives business growth.
             </p>
             <div className="flex space-x-4">

@@ -33,7 +33,7 @@ const Services = () => {
   ]
 
   return (
-    <section id="services" className="py-16 sm:py-20 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
+    <section id="services" className="py-16 sm:py-20 bg-gray-50 relative overflow-hidden">
       {/* Background Decorative Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 right-10 w-72 h-72 bg-blue-100 rounded-full opacity-30 blur-3xl"></div>
@@ -48,7 +48,7 @@ const Services = () => {
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
             Our
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-600"> Services</span>
+            <span className="text-blue-600"> Services</span>
           </h2>
           <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
             Comprehensive solutions to transform your ideas into powerful digital experiences
@@ -64,14 +64,14 @@ const Services = () => {
             >
               {/* Image */}
               <div className="relative h-48 sm:h-56 overflow-hidden">
-                <img 
-                  src={service.image} 
+                <img
+                  src={service.image}
                   alt={service.title}
                   className="w-full h-full object-cover group-hover:scale-110 transition-all duration-700"
                 />
                 {/* Subtle Gradient Overlay for text readability */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-                
+                <div className="absolute inset-0 bg-black/60"></div>
+
                 {/* Title with Arrow */}
                 <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-4">
                   <h3 className="text-sm sm:text-xl font-bold text-white drop-shadow-lg">
@@ -81,11 +81,11 @@ const Services = () => {
               </div>
 
               {/* Content */}
-              <div className="p-3 sm:p-6 bg-gradient-to-b from-white to-gray-50/50 group-hover:bg-white transition-colors duration-300">
+              <div className="p-3 sm:p-6 bg-white group-hover:bg-white transition-colors duration-300">
                 <p className="text-xs sm:text-sm text-gray-600 leading-relaxed line-clamp-3 group-hover:text-gray-800 transition-colors">
                   {service.description}
                 </p>
-                
+
                 {/* Learn More Link - appears on hover */}
                 <div className="mt-3 sm:mt-4 flex items-center text-blue-600 font-semibold text-xs sm:text-sm opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300">
                   <span>Explore service</span>
@@ -96,7 +96,7 @@ const Services = () => {
               </div>
 
               {/* Animated Bottom Bar */}
-              <div className="h-1 bg-gradient-to-r from-blue-600 to-cyan-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-700 origin-left"></div>
+              <div className="h-1 bg-blue-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-700 origin-left"></div>
             </div>
           ))}
         </div>

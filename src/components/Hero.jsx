@@ -1,9 +1,9 @@
-import { useState, useEffect } from 'react'
+import { useEffect, useState } from 'react'
 
 const Hero = () => {
   const [typedText, setTypedText] = useState('')
   const fullText = 'Full Stack App Developer using Flutter & Flutterflow'
-  
+
   useEffect(() => {
     let currentIndex = 0
     const typingInterval = setInterval(() => {
@@ -19,7 +19,7 @@ const Hero = () => {
   }, [])
 
   return (
-    <section id="home" className="relative pt-16 pb-20 overflow-hidden bg-gradient-to-br from-blue-600 via-blue-700 to-cyan-600">
+    <section id="home" className="relative pt-16 pb-20 overflow-hidden bg-blue-600">
       {/* Background Effects */}
       <div className="absolute inset-0">
         <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
@@ -41,7 +41,7 @@ const Hero = () => {
 
             <a
               href="#contact"
-              className="inline-flex items-center bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 hover:-translate-y-1"
+              className="inline-flex items-center bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 hover:-translate-y-1"
             >
               Let's talk
               <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">

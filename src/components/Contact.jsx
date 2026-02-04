@@ -64,10 +64,10 @@ const Contact = () => {
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
             Let's Build Something
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500"> Amazing</span>
+            <span className="text-blue-600"> Amazing</span>
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed">
-            Have a project in mind? I'd love to hear about it. Send me a message and let's 
+            Have a project in mind? I'd love to hear about it. Send me a message and let's
             discuss how we can work together to bring your vision to life.
           </p>
         </div>
@@ -81,7 +81,7 @@ const Contact = () => {
                 href={info.link}
                 className="flex items-center space-x-4 bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 hover:scale-105 group"
               >
-                <div className="w-14 h-14 bg-gradient-to-br from-blue-600 to-cyan-600 rounded-2xl flex items-center justify-center text-white group-hover:scale-110 transition-transform">
+                <div className="w-14 h-14 bg-blue-600 rounded-2xl flex items-center justify-center text-white group-hover:scale-110 transition-transform">
                   {info.icon}
                 </div>
                 <div>
@@ -131,7 +131,7 @@ const Contact = () => {
             </div>
 
             {/* Availability */}
-            <div className="bg-gradient-to-br from-blue-600 to-cyan-600 rounded-2xl p-6 shadow-lg text-white">
+            <div className="bg-blue-600 rounded-2xl p-6 shadow-lg text-white">
               <div className="flex items-center space-x-3 mb-3">
                 <span className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></span>
                 <span className="font-semibold">Currently Available</span>
@@ -175,7 +175,7 @@ const Contact = () => {
                   />
                 </div>
               </div>
-              
+
               <div className="mb-6">
                 <label className="block text-sm font-medium text-gray-700 mb-2">
                   Subject
@@ -190,7 +190,7 @@ const Contact = () => {
                   placeholder="Project Inquiry"
                 />
               </div>
-              
+
               <div className="mb-6">
                 <label className="block text-sm font-medium text-gray-700 mb-2">
                   Message
@@ -208,7 +208,7 @@ const Contact = () => {
 
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-8 py-4 rounded-xl text-base font-semibold hover:from-blue-700 hover:to-cyan-700 transition-all duration-300 shadow-lg shadow-blue-600/30 hover:shadow-blue-600/50 hover:scale-105 hover:-translate-y-1 flex items-center justify-center space-x-2"
+                className="w-full bg-blue-600 text-white px-8 py-4 rounded-xl text-base font-semibold hover:bg-blue-700 transition-all duration-300 shadow-lg shadow-blue-600/30 hover:shadow-blue-600/50 hover:scale-105 hover:-translate-y-1 flex items-center justify-center space-x-2"
               >
                 <span>Send Message</span>
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
