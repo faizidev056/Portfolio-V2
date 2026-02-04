@@ -1,3 +1,4 @@
+import emailjs from '@emailjs/browser'
 import { useState } from 'react'
 
 const Contact = () => {
@@ -8,12 +9,33 @@ const Contact = () => {
     message: ''
   })
 
-  const handleSubmit = (e) => {
+  const [isLoading, setIsLoading] = useState(false)
+
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    // Handle form submission
-    console.log(formData)
-    alert('Thank you for your message! I will get back to you soon.')
-    setFormData({ name: '', email: '', subject: '', message: '' })
+    setIsLoading(true)
+
+    try {
+      await emailjs.send(
+        'service_4h4f2c2',
+        'template_ubif4x3',
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        },
+        'FkTBPa4Zp6p4M3Cxj'
+      )
+
+      alert('Thank you for your message! I will get back to you soon.')
+      setFormData({ name: '', email: '', subject: '', message: '' })
+    } catch (error) {
+      console.error('EmailJS error:', error)
+      alert('Sorry, there was an error sending your message. Please try again later.')
+    } finally {
+      setIsLoading(false)
+    }
   }
 
   const handleChange = (e) => {
@@ -208,12 +230,25 @@ const Contact = () => {
 
               <button
                 type="submit"
-                className="w-full bg-blue-600 text-white px-8 py-4 rounded-xl text-base font-semibold hover:bg-blue-700 transition-all duration-300 shadow-lg shadow-blue-600/30 hover:shadow-blue-600/50 hover:scale-105 hover:-translate-y-1 flex items-center justify-center space-x-2"
+                disabled={isLoading}
+                className="w-full bg-blue-600 text-white px-8 py-4 rounded-xl text-base font-semibold hover:bg-blue-700 disabled:bg-blue-400 disabled:cursor-not-allowed transition-all duration-300 shadow-lg shadow-blue-600/30 hover:shadow-blue-600/50 hover:scale-105 hover:-translate-y-1 disabled:hover:scale-100 disabled:hover:translate-y-0 flex items-center justify-center space-x-2"
               >
-                <span>Send Message</span>
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
-                </svg>
+                {isLoading ? (
+                  <>
+                    <svg className="animate-spin w-5 h-5" fill="none" viewBox="0 0 24 24">
+                      <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                      <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    </svg>
+                    <span>Sending...</span>
+                  </>
+                ) : (
+                  <>
+                    <span>Send Message</span>
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                    </svg>
+                  </>
+                )}
               </button>
             </form>
           </div>
