@@ -96,26 +96,6 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Recognition Section */}
-        <div className="mt-20">
-          <p className="text-white/60 text-sm font-semibold uppercase tracking-wider mb-8 text-center">
-            RECOGNIZED BY
-          </p>
-          <div className="flex flex-wrap justify-center items-center gap-8 opacity-70">
-            <div className="bg-white/10 backdrop-blur-sm px-6 py-3 rounded-lg">
-              <span className="text-white font-semibold">Inc 5000</span>
-            </div>
-            <div className="bg-white/10 backdrop-blur-sm px-6 py-3 rounded-lg">
-              <span className="text-white font-semibold">Forbes</span>
-            </div>
-            <div className="bg-white/10 backdrop-blur-sm px-6 py-3 rounded-lg">
-              <span className="text-white font-semibold">Upwork Top Rated</span>
-            </div>
-            <div className="bg-white/10 backdrop-blur-sm px-6 py-3 rounded-lg">
-              <span className="text-white font-semibold">Financial Times</span>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   )
