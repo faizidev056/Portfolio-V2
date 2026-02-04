@@ -3,6 +3,8 @@ import { useEffect, useState } from 'react'
 // Import local images
 import ambreenImage from '../assets/ambreen.png'
 import faizanSaeedImage from '../assets/faizan_saeed.png'
+import faizanSattarImage from '../assets/faizan_sattar.png'
+import usmanImage from '../assets/usman.png'
 import talhaImage from '../assets/talha.png'
 
 const OurTeam = () => {
@@ -13,7 +15,7 @@ const OurTeam = () => {
     {
       name: 'Faizan Saeed',
       role: 'Lead Flutter Developer',
-      specialty: 'Flutter, FlutterFlow & Scalable Mobile Architecture',
+      specialty: 'Flutter, FlutterFlow & MERN Stack',
       image: faizanSaeedImage,
       bio: 'Lead Flutter Developer with 5+ years of experience building high-performance mobile applications. Specialized in Flutter and FlutterFlow, clean architecture (MVVM), and backend integrations. Proven expertise in developing scalable, secure apps with real-time features and smooth user experiences.',
       skills: [
@@ -37,8 +39,8 @@ const OurTeam = () => {
       name: 'Faizan Sattar',
       role: 'Product Designer',
       specialty: 'User Experience & Interface Design',
-      image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop&crop=face',
-      bio: 'Product Designer with 3+ years of experience creating intuitive, user-centered digital products. Skilled in UX research, wireframing, and design systems, with a strong focus on delivering scalable and visually engaging experiences through close collaboration with cross-functional teams.'
+      image: faizanSattarImage,
+      bio: 'Product Designer with over 5 years of experience creating intuitive, user-centered digital products. Skilled in UX research, wireframing, and design systems, with a strong focus on delivering scalable and visually engaging experiences through close collaboration with cross-functional teams.'
       , skills: [
         'Figma',
         'UI/UX Design',
@@ -56,7 +58,7 @@ const OurTeam = () => {
       role: 'Web Developer | Backend Developer',
       specialty: 'MERN Stack',
       image: ambreenImage,
-      bio: 'Web and Backend Developer with 5+ years of industry experience building scalable, secure web applications. Specialized in the MERN stack with a strong focus on backend APIs, authentication, and maintainable system architecture.',
+      bio: 'Web and Backend Developer with 3+ years of industry experience building scalable, secure web applications. Specialized in the MERN stack with a strong focus on backend APIs, authentication, and maintainable system architecture.',
       skills: [
         'React.js',
         'Next.js',
@@ -93,10 +95,10 @@ const OurTeam = () => {
     ,
     {
       name: 'Muhammad Talha',
-      role: 'Software Engineer | Flutter Developer',
+      role: 'Senior Flutter Developer',
       specialty: 'Flutter Mobile App Development',
       image: talhaImage,
-      bio: 'Passionate Flutter developer focused on building high-performance mobile applications with clean architecture, seamless API integrations, and polished user experiences. Strong ownership mindset with a track record of delivering end-to-end solutions that create real value.',
+      bio: 'Passionate Flutter developer with 5+ years of experience focused on building high-performance mobile applications with clean architecture, seamless API integrations, and polished user experiences. Strong ownership mindset with a track record of delivering end-to-end solutions that create real value.',
       skills: [
         'Flutter',
         'Dart',
@@ -112,7 +114,7 @@ const OurTeam = () => {
       name: 'Muhammad Usman',
       role: 'Senior Flutter App Developer',
       specialty: 'Flutter Architecture & Scalable Mobile Apps',
-      image: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&h=400&fit=crop&crop=face',
+      image: usmanImage,
       bio: 'Senior Flutter App Developer with 5+ years of experience building scalable, high-performance mobile applications. Expertise in Flutter architecture, state management, and API integration, with a strong focus on clean code, performance optimization, and collaborative development.',
       skills: [
         'Flutter',
