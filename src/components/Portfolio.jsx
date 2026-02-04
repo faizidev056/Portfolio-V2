@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const Portfolio = () => {
   // State for testimonial carousel
@@ -119,9 +120,10 @@ const Portfolio = () => {
         {/* Projects Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-10 mb-16 lg:mb-24">
           {displayedProjects.map((project, index) => (
-            <div
+            <Link
+              to={`/project/${project.title}`}
               key={index}
-              className="group cursor-pointer"
+              className="group cursor-pointer block"
               style={{
                 animation: `fadeInUp 0.6s ease-out ${index * 0.1}s both`
               }}
@@ -175,7 +177,7 @@ const Portfolio = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
 
           {/* Explore Projects Card - Shown as the last item when collapsed */}

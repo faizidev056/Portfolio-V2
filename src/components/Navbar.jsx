@@ -14,12 +14,12 @@ const Navbar = () => {
   },)
 
   const navLinks = [
-    { name: 'Home', href: '#home' },
-    { name: 'Services', href: '#services' },
-    { name: 'Team', href: '#team' },
-    { name: 'Projects', href: '#portfolio' },
-    { name: 'Reviews', href: '#reviews' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Home', href: '/#home' },
+    { name: 'Services', href: '/#services' },
+    { name: 'Team', href: '/#team' },
+    { name: 'Projects', href: '/#portfolio' },
+    { name: 'Reviews', href: '/#reviews' },
+    { name: 'Contact', href: '/#contact' },
   ]
 
   return (
@@ -27,7 +27,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <a href="#home" className="flex items-center space-x-2 transition-transform duration-200 hover:scale-105">
+          <a href="/#home" className="flex items-center space-x-2 transition-transform duration-200 hover:scale-105">
             <img
               src={faizanSaeedImage}
               alt="Faizan Saeed"

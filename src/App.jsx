@@ -1,24 +1,25 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import Services from './components/Services'
-import Stats from './components/Stats'
-import Portfolio from './components/Portfolio'
-import OurTeam from './components/OurTeam'
-import Contact from './components/Contact'
 import Footer from './components/Footer'
+import Home from './pages/Home'
+import ServiceDetail from './pages/ServiceDetail'
+
+import ProjectDetail from './pages/ProjectDetail'
 
 function App() {
   return (
-    <div className="bg-white">
-      <Navbar />
-      <Hero />
-      <Services />
-      <OurTeam />
-      <Stats />
-      <Portfolio />
-      <Contact />
-      <Footer />
-    </div>
+    <Router>
+      <div className="bg-white">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/service/:id" element={<ServiceDetail />} />
+
+          <Route path="/project/:id" element={<ProjectDetail />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   )
 }
 

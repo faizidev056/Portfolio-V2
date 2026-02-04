@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 const Services = () => {
   const services = [
     {
@@ -57,9 +59,10 @@ const Services = () => {
         {/* Services Grid */}
         <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
           {services.map((service, index) => (
-            <div
+            <Link
+              to={`/service/${service.title}`}
               key={index}
-              className="bg-white rounded-2xl overflow-hidden border border-gray-200 hover:border-blue-300 hover:shadow-2xl transition-all duration-500 group relative"
+              className="bg-white rounded-2xl overflow-hidden border border-gray-200 hover:border-blue-300 hover:shadow-2xl transition-all duration-500 group relative block"
             >
               {/* Image */}
               <div className="relative h-48 sm:h-56 overflow-hidden">
@@ -96,7 +99,7 @@ const Services = () => {
 
               {/* Animated Bottom Bar */}
               <div className="h-1 bg-blue-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-700 origin-left"></div>
-            </div>
+            </Link>
           ))}
         </div>
 

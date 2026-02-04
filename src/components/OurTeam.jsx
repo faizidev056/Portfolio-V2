@@ -7,6 +7,8 @@ import faizanSattarImage from '../assets/faizan_sattar.png'
 import usmanImage from '../assets/usman.png'
 import talhaImage from '../assets/talha.png'
 
+
+
 const OurTeam = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isAutoPlaying, setIsAutoPlaying] = useState(true)

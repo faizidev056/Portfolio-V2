@@ -5,20 +5,20 @@ const Footer = () => {
 
   const footerLinks = {
     services: [
-      { name: 'Full Stack App Development', href: '#services' },
-      { name: 'Web Development', href: '#services' },
-      { name: 'Backend Development', href: '#services' },
-      { name: 'Database Management', href: '#services' },
-      { name: 'UI/UX Design', href: '#services' },
-      { name: 'WordPress Development', href: '#services' },
+      { name: 'Full Stack App Development', href: '/#services' },
+      { name: 'Web Development', href: '/#services' },
+      { name: 'Backend Development', href: '/#services' },
+      { name: 'Database Management', href: '/#services' },
+      { name: 'UI/UX Design', href: '/#services' },
+      { name: 'WordPress Development', href: '/#services' },
     ],
     company: [
-      { name: 'Home', href: '#home' },
-      { name: 'Services', href: '#services' },
-      { name: 'Team', href: '#team' },
-      { name: 'Projects', href: '#portfolio' },
-      { name: 'Reviews', href: '#reviews' },
-      { name: 'Contact', href: '#contact' },
+      { name: 'Home', href: '/#home' },
+      { name: 'Services', href: '/#services' },
+      { name: 'Team', href: '/#team' },
+      { name: 'Projects', href: '/#portfolio' },
+      { name: 'Reviews', href: '/#reviews' },
+      { name: 'Contact', href: '/#contact' },
     ],
     social: [
       { name: 'LinkedIn', href: 'https://linkedin.com' },
@@ -35,7 +35,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-16">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <a href="#home" className="inline-block mb-6 transition-transform duration-200 hover:scale-105">
+            <a href="/#home" className="inline-block mb-6 transition-transform duration-200 hover:scale-105">
               <div className="flex items-center space-x-3">
                 <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center shadow-lg overflow-hidden">
                   <img src={faizanSaeedImage} alt="FS" className="w-full h-full object-cover" />
