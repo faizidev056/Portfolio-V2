@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 
 const Hero = () => {
   const [typedText, setTypedText] = useState('')
-  const fullText = 'Full Stack App Developer using Flutter & Flutterflow'
+  const fullText = 'Full Stack App Developer'
 
   useEffect(() => {
     let currentIndex = 0
@@ -36,7 +36,9 @@ const Hero = () => {
             </h1>
 
             <p className="text-xl text-white/80 mb-10 max-w-lg leading-relaxed">
-              With over 5 years of experience, I specialize in bridging low-code platforms like FlutterFlow with custom development using Node.js and Flutter. I have successfully deployed 10+ production-ready applications, utilizing advanced skills in Flutter (Dart), Node.js, Express.js, and Prisma to create scalable, high-performance solutions that deliver measurable business value.
+              <p>Full-Stack Mobile App Developer with 5+ years of experience across Flutter, FlutterFlow, and Node.js ecosystems.</p>
+              <p>I build high-performance mobile products by bridging low-code speed with custom-coded flexibility, designing scalable architectures using Flutter (Dart), Node.js, Express.js, and Prisma. I’ve successfully deployed 10+ production applications, delivering stable, maintainable systems built for real users and real growth.
+              </p>
             </p>
 
             <a
