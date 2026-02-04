@@ -1,7 +1,7 @@
 const Services = () => {
   const services = [
     {
-      title: 'Full Stack App Development',
+      title: 'App Development',
       description: 'Building cross-platform applications with Flutter, FlutterFlow, and React. Expert in state management using Bloc, Riverpod, Provider, and GetX.',
       image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=600&fit=crop',
     },
