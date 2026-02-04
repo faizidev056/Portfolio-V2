@@ -51,8 +51,7 @@ const Services = () => {
             <span className="text-blue-600"> Services</span>
           </h2>
           <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
-            Comprehensive solutions to transform your ideas into powerful digital experiences
-          </p>
+            Comprehensive solutions for all your digital needs, backed by a skilled team to deliver excellence.          </p>
         </div>
 
         {/* Services Grid */}

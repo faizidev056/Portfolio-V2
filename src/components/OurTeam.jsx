@@ -14,7 +14,7 @@ const OurTeam = () => {
       skills: ['Flutter', 'FlutterFlow', 'Node.js', 'Firebase']
     },
     {
-      name: 'Sarah Chen',
+      name: 'Faizan Sattar',
       role: 'UI/UX Designer',
       specialty: 'User Experience & Interface Design',
       image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop&crop=face',
@@ -22,36 +22,36 @@ const OurTeam = () => {
       skills: ['Figma', 'Prototyping', 'User Research', 'Design Systems']
     },
     {
-      name: 'Marcus Rodriguez',
-      role: 'Backend Engineer',
+      name: 'Ambreen Fatima',
+      role: 'Full Stack Web Developer (MERN)',
       specialty: 'API Development & Database Architecture',
       image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=face',
       bio: 'Backend specialist with expertise in building scalable, secure server-side applications.',
-      skills: ['Node.js', 'Express.js', 'PostgreSQL', 'Docker']
+      skills: ['Node.js', 'Express.js', 'PostgreSQL', 'Docker', 'WordPress']
     },
     {
-      name: 'Emma Thompson',
-      role: 'Project Manager',
-      specialty: 'Agile & Client Relations',
-      image: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&h=400&fit=crop&crop=face',
-      bio: 'Experienced PM ensuring seamless project delivery and exceptional client communication.',
-      skills: ['Agile', 'Scrum', 'Jira', 'Stakeholder Management']
-    },
-    {
-      name: 'David Kim',
-      role: 'DevOps Engineer',
+      name: 'Kabir Ahmad',
+      role: 'Web Developer',
       specialty: 'Cloud Infrastructure & CI/CD',
       image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face',
       bio: 'DevOps expert focused on automation, deployment pipelines, and cloud infrastructure.',
       skills: ['AWS', 'Docker', 'Kubernetes', 'CI/CD']
     },
     {
-      name: 'Aisha Patel',
-      role: 'QA Engineer',
+      name: 'Talha Ashraf',
+      role: 'Flutter and Flutterflow Devloper',
       specialty: 'Quality Assurance & Testing',
       image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop&crop=face',
       bio: 'Meticulous QA engineer ensuring flawless user experiences through comprehensive testing.',
       skills: ['Test Automation', 'Selenium', 'Jest', 'Quality Standards']
+    },
+    {
+      name: 'Muhammad Usman',
+      role: 'Flutter App Developer',
+      specialty: 'Agile & Client Relations',
+      image: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&h=400&fit=crop&crop=face',
+      bio: 'Experienced PM ensuring seamless project delivery and exceptional client communication.',
+      skills: ['Agile', 'Scrum', 'Jira', 'Stakeholder Management']
     }
   ]
 
@@ -197,8 +197,8 @@ const OurTeam = () => {
                 key={index}
                 onClick={() => goToSlide(index)}
                 className={`transition-all duration-300 rounded-full ${currentIndex === index
-                    ? 'w-8 h-3 bg-blue-600'
-                    : 'w-3 h-3 bg-gray-300 hover:bg-gray-400'
+                  ? 'w-8 h-3 bg-blue-600'
+                  : 'w-3 h-3 bg-gray-300 hover:bg-gray-400'
                   }`}
                 aria-label={`Go to slide ${index + 1}`}
               />
