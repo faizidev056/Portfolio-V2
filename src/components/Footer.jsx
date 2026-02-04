@@ -18,7 +18,7 @@ const Footer = () => {
     ],
     social: [
       { name: 'LinkedIn', href: 'https://linkedin.com' },
-      { name: 'GitHub', href: 'https://github.com' },
+      { name: 'GitHub', href: 'https://github.com/faizidev056' },
       { name: 'Twitter', href: 'https://twitter.com' },
       { name: 'Upwork', href: 'https://upwork.com' },
     ]
@@ -59,7 +59,7 @@ const Footer = () => {
                 </svg>
               </a>
               <a
-                href="https://github.com"
+                href="https://github.com/faizidev056"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-gray-700 transition-all duration-200 hover:scale-110 hover:-translate-y-1"
