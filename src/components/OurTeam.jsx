@@ -4,8 +4,8 @@ import { useEffect, useState } from 'react'
 import ambreenImage from '../assets/ambreen.png'
 import faizanSaeedImage from '../assets/faizan_saeed.png'
 import faizanSattarImage from '../assets/faizan_sattar.png'
-import usmanImage from '../assets/usman.png'
 import talhaImage from '../assets/talha.png'
+import usmanImage from '../assets/usman.png'
 
 
 
@@ -19,7 +19,7 @@ const OurTeam = () => {
       role: 'Lead Flutter Developer',
       specialty: 'Flutter, FlutterFlow & MERN Stack',
       image: faizanSaeedImage,
-      bio: 'Lead Flutter Developer with 5+ years of experience building high-performance mobile applications. Specialized in Flutter and FlutterFlow, clean architecture (MVVM), and backend integrations. Proven expertise in developing scalable, secure apps with real-time features and smooth user experiences.',
+      bio: 'Lead Flutter Developer with over 5+ years ofexperience of building high-performance mobile applications. Specialized in Flutter and FlutterFlow, clean architecture (MVVM), and backend integrations. Proven expertise in developing scalable, secure apps with real-time features and smooth user experiences.',
       skills: [
         'Flutter',
         'FlutterFlow',
@@ -42,7 +42,7 @@ const OurTeam = () => {
       role: 'Product Designer',
       specialty: 'User Experience & Interface Design',
       image: faizanSattarImage,
-      bio: 'Product Designer with over 5 years of experience creating intuitive, user-centered digital products. Skilled in UX research, wireframing, and design systems, with a strong focus on delivering scalable and visually engaging experiences through close collaboration with cross-functional teams.'
+      bio: 'Product Designer with years of experience creating intuitive, user-centered digital products. Skilled in UX research, wireframing, and design systems, with a strong focus on delivering scalable and visually engaging experiences through close collaboration with cross-functional teams.'
       , skills: [
         'Figma',
         'UI/UX Design',
@@ -60,7 +60,7 @@ const OurTeam = () => {
       role: 'Web Developer | Backend Developer',
       specialty: 'MERN Stack',
       image: ambreenImage,
-      bio: 'Web and Backend Developer with 3+ years of industry experience building scalable, secure web applications. Specialized in the MERN stack with a strong focus on backend APIs, authentication, and maintainable system architecture.',
+      bio: 'Industry experience of building scalable, secure web applications. Specialized in the MERN stack with a strong focus on backend APIs, authentication, and maintainable system architecture.',
       skills: [
         'React.js',
         'Next.js',
@@ -74,33 +74,33 @@ const OurTeam = () => {
       ]
     }
 
-    ,
-    {
-      name: 'Kabir Ahmad',
-      role: 'Web Developer',
-      specialty: 'Web Development & Cloud Deployment',
-      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face',
-      bio: 'Web Developer with 2+ years of experience building responsive, reliable web applications. Experienced in modern frontend and backend development with hands-on exposure to cloud deployment, CI/CD pipelines, and application performance optimization.',
-      skills: [
-        'HTML',
-        'CSS',
-        'JavaScript',
-        'React.js',
-        'Node.js',
-        'REST APIs',
-        'AWS',
-        'Docker',
-        'CI/CD',
-        'Git & GitHub'
-      ]
-    }
+    // ,
+    // {
+    //   name: 'Kabir Ahmad',
+    //   role: 'Web Developer',
+    //   specialty: 'Web Development & Cloud Deployment',
+    //   image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face',
+    //   bio: 'Web Developer with 2+ years of experience building responsive, reliable web applications. Experienced in modern frontend and backend development with hands-on exposure to cloud deployment, CI/CD pipelines, and application performance optimization.',
+    //   skills: [
+    //     'HTML',
+    //     'CSS',
+    //     'JavaScript',
+    //     'React.js',
+    //     'Node.js',
+    //     'REST APIs',
+    //     'AWS',
+    //     'Docker',
+    //     'CI/CD',
+    //     'Git & GitHub'
+    //   ]
+    // }
     ,
     {
       name: 'Muhammad Talha',
       role: 'Senior Flutter Developer',
       specialty: 'Flutter Mobile App Development',
       image: talhaImage,
-      bio: 'Passionate Flutter developer with 5+ years of experience focused on building high-performance mobile applications with clean architecture, seamless API integrations, and polished user experiences. Strong ownership mindset with a track record of delivering end-to-end solutions that create real value.',
+      bio: 'Passionate Senior Flutter developer with experience of building high-performance mobile applications with clean architecture, seamless API integrations, and polished user experiences. Strong ownership mindset with a track record of delivering end-to-end solutions that create real value.',
       skills: [
         'Flutter',
         'Dart',
@@ -117,7 +117,7 @@ const OurTeam = () => {
       role: 'Senior Flutter App Developer',
       specialty: 'Flutter Architecture & Scalable Mobile Apps',
       image: usmanImage,
-      bio: 'Senior Flutter App Developer with 5+ years of experience building scalable, high-performance mobile applications. Expertise in Flutter architecture, state management, and API integration, with a strong focus on clean code, performance optimization, and collaborative development.',
+      bio: 'Senior Flutter App Developer with experience of building scalable, high-performance mobile applications. Expertise in Flutter architecture, state management, and API integration, with a strong focus on clean code, performance optimization, and collaborative development.',
       skills: [
         'Flutter',
         'Dart',

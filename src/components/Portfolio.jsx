@@ -7,8 +7,7 @@ const Portfolio = () => {
   // State for testimonial carousel
   const [currentTestimonial, setCurrentTestimonial] = useState(0)
 
-  // State for showing all projects
-  const [showAll, setShowAll] = useState(false)
+
 
   const testimonials = [
     {
@@ -44,7 +43,7 @@ const Portfolio = () => {
 
   // Determine which projects to display
   // If not showing all, take first 3. Otherwise take all.
-  const displayedProjects = showAll ? projectsData : projectsData.slice(0, 3)
+  const displayedProjects = projectsData.slice(0, 3)
 
   return (
     <section id="portfolio" className="py-16 sm:py-20 lg:py-24 bg-gray-50">
@@ -125,43 +124,42 @@ const Portfolio = () => {
           ))}
 
           {/* Explore Projects Card - Shown as the last item when collapsed */}
-          {!showAll && (
-            <div
-              className="group cursor-pointer h-full"
-              onClick={() => setShowAll(true)}
-              style={{
-                animation: `fadeInUp 0.6s ease-out 0.4s both`
-              }}
-            >
-              <div className="bg-gradient-to-br from-blue-600 to-blue-800 rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:scale-[1.02] hover:-translate-y-2 h-full min-h-[400px] flex flex-col items-center justify-center relative">
-                {/* Background Pattern */}
-                <div className="absolute inset-0 opacity-20">
-                  <div className="absolute top-0 right-0 w-64 h-64 bg-white rounded-full mix-blend-overlay filter blur-3xl transform translate-x-1/2 -translate-y-1/2"></div>
-                  <div className="absolute bottom-0 left-0 w-64 h-64 bg-white rounded-full mix-blend-overlay filter blur-3xl transform -translate-x-1/2 translate-y-1/2"></div>
-                </div>
+          {/* Explore Projects Card - Shown as the last item */}
+          <Link
+            to="/projects"
+            className="group cursor-pointer h-full"
+            style={{
+              animation: `fadeInUp 0.6s ease-out 0.4s both`
+            }}
+          >
+            <div className="bg-gradient-to-br from-blue-600 to-blue-800 rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:scale-[1.02] hover:-translate-y-2 h-full min-h-[400px] flex flex-col items-center justify-center relative">
+              {/* Background Pattern */}
+              <div className="absolute inset-0 opacity-20">
+                <div className="absolute top-0 right-0 w-64 h-64 bg-white rounded-full mix-blend-overlay filter blur-3xl transform translate-x-1/2 -translate-y-1/2"></div>
+                <div className="absolute bottom-0 left-0 w-64 h-64 bg-white rounded-full mix-blend-overlay filter blur-3xl transform -translate-x-1/2 translate-y-1/2"></div>
+              </div>
 
-                <div className="relative z-10 text-center p-8">
-                  <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6 backdrop-blur-sm group-hover:scale-110 transition-transform duration-300">
-                    <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
-                    </svg>
-                  </div>
-                  <h3 className="text-3xl font-bold text-white mb-4">
-                    Explore All Projects
-                  </h3>
-                  <p className="text-blue-100 mb-8 max-w-xs mx-auto">
-                    Discover more of my work, including mobile apps, web platforms, and backend systems.
-                  </p>
-                  <span className="inline-flex items-center bg-white text-blue-700 px-8 py-3 rounded-xl font-semibold hover:bg-blue-50 transition-colors shadow-lg">
-                    View Full Portfolio
-                    <svg className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                    </svg>
-                  </span>
+              <div className="relative z-10 text-center p-8">
+                <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6 backdrop-blur-sm group-hover:scale-110 transition-transform duration-300">
+                  <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                  </svg>
                 </div>
+                <h3 className="text-3xl font-bold text-white mb-4">
+                  Explore All Projects
+                </h3>
+                <p className="text-blue-100 mb-8 max-w-xs mx-auto">
+                  Discover more of my work, including mobile apps, web platforms, and backend systems.
+                </p>
+                <span className="inline-flex items-center bg-white text-blue-700 px-8 py-3 rounded-xl font-semibold hover:bg-blue-50 transition-colors shadow-lg">
+                  View Full Portfolio
+                  <svg className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </span>
               </div>
             </div>
-          )}
+          </Link>
         </div>
 
         {/* What Clients Say Carousel */}
