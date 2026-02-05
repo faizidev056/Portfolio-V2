@@ -19,7 +19,7 @@ const OurTeam = () => {
       role: 'Lead Flutter Developer',
       specialty: 'Flutter, FlutterFlow & MERN Stack',
       image: faizanSaeedImage,
-      bio: 'Lead Flutter Developer with over 5+ years ofexperience of building high-performance mobile applications. Specialized in Flutter and FlutterFlow, clean architecture (MVVM), and backend integrations. Proven expertise in developing scalable, secure apps with real-time features and smooth user experiences.',
+      bio: 'Lead Flutter Developer with over 5+ years of experience of building high-performance mobile applications. Specialized in Flutter and FlutterFlow, clean architecture (MVVM), and backend integrations. Proven expertise in developing scalable, secure apps with real-time features and smooth user experiences.',
       skills: [
         'Flutter',
         'FlutterFlow',
